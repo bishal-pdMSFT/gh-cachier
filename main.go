@@ -77,7 +77,7 @@ func main() {
 	var repo *string = flag.String("repo", "", "Name of the repository to fetch cache usage for")
 	var org *string = flag.String("org", "", "Name of the organization to fetch cache usage for")
 	//var ent *string = flag.String("enterprise", "", "Name of the enterprise to fetch cache usage for")
-	var byRepo *bool = flag.BoolP("by-repo", "R", false, "Flag to fetch cache usage per repo")
+	var byRepo *bool = flag.BoolP("by-repo", "R", false, "Flag to fetch cache usage per repo for an org. To be used with `--org` option")
 
 	flag.Parse()
 	args := flag.Args()

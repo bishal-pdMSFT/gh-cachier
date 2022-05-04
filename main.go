@@ -82,7 +82,7 @@ func main() {
 	flag.Parse()
 	args := flag.Args()
 
-	if args[0] == "usage" {
+	if args[0] == "usages" {
 		if *repo != "" {
 			var repoScope RepoScope = RepoScope{Name: *repo}
 			repoScope.getCacheUsage()
